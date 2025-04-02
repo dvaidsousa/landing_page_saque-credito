@@ -50,14 +50,13 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
   .hero-section {
     padding: 6rem 1rem;
-
   }
 }
 
@@ -65,14 +64,14 @@ export default {
   max-width: 1500px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
 }
 
 .grid {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -86,7 +85,7 @@ export default {
   text-align: center;
   color: #000;
   max-width: 600px;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -96,7 +95,7 @@ export default {
 }
 
 .tagline {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #00a508;
   text-transform: uppercase;
@@ -104,55 +103,52 @@ export default {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
   color: #000;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #000;
 }
 
 @media (max-width: 1024px) {
   h1 {
-    font-size: 3rem;
-  }
-
-  h4 {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 768px) {
-  h1 {
     font-size: 2.5rem;
   }
-
   h4 {
     font-size: 1.2rem;
   }
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 480px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
-
   h4 {
     font-size: 1rem;
   }
 }
 
 .review {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .reviews-count {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -160,12 +156,13 @@ h4 {
   background-color: #007506;
   color: #fff;
   font-weight: 700;
-  font-size: 1.2rem;
-  padding: 14px 28px;
+  font-size: 1rem;
+  padding: 12px 20px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
+  width: 100%;
 }
 
 .cta-button:hover {
@@ -173,37 +170,23 @@ h4 {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .cta-button {
-    width: 100%;
-    font-size: 1.1rem;
-    padding: 12px 24px;
-  }
-}
-
 @media (max-width: 480px) {
   .cta-button {
-    font-size: 1rem;
-    padding: 10px 20px;
+    font-size: 0.9rem;
+    padding: 10px 18px;
   }
 }
 
 .hero-image {
   width: 100%;
-  max-width: 900px;
+  max-width: 800px;
   border-radius: 10px;
   transition: transform 0.3s;
 }
 
-@media (max-width: 1024px) {
-  .hero-image {
-    max-width: 700px;
-  }
-}
-
 @media (max-width: 768px) {
   .hero-image {
-    max-width: 500px;
+    max-width: 450px;
   }
 }
 
