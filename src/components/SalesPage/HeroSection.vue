@@ -50,9 +50,15 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 6rem 1rem;
+
+  }
 }
 
 .container {
