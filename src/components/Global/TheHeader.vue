@@ -76,7 +76,7 @@ export default {
 }
 
 .logo img {
-  height: 90px;
+  height: 80px;
 }
 
 .nav-button {
@@ -85,26 +85,34 @@ export default {
   color: #3d3d3d;
   margin: 0 1rem;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .nav-button:hover {
   color: #00c44b;
+  transform: scale(1.1);
 }
 
 .hamburger {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 30px;
-  height: 24px;
+  width: 35px;
+  height: 28px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+  transform: rotate(5deg);
 }
 
 .hamburger-line {
   width: 100%;
-  height: 3px;
+  height: 4px;
   background-color: #00c44b;
+  transition: background-color 0.3s ease;
 }
 
 .nav-mobile {
@@ -120,22 +128,58 @@ export default {
   transition: max-height 0.3s ease, padding 0.3s ease;
   max-height: 0;
   overflow: hidden;
+  width: 200px;
 }
 
 .nav-mobile button {
-  margin: 0.5rem 0;
+  margin: 0.7rem 0;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 1rem 5vw;
+  }
+  .logo img {
+    height: 70px;
+  }
+  .nav-button {
+    font-size: 1rem;
+    margin: 0 0.8rem;
+  }
 }
 
 @media (max-width: 768px) {
   .nav-desktop {
     display: none;
   }
-}
-
-@media (min-width: 769px) {
-  .hamburger,
+  .hamburger {
+    display: flex;
+  }
   .nav-mobile {
-    display: none;
+    width: 180px;
+    right: 0.5rem;
   }
 }
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.8rem 3vw;
+  }
+  .logo img {
+    height: 60px;
+  }
+  .nav-mobile {
+    width: 160px;
+    right: 0.5rem;
+  }
+  .hamburger {
+    width: 30px;
+    height: 24px;
+  }
+  .hamburger-line {
+    height: 3px;
+  }
+}
+
 </style>

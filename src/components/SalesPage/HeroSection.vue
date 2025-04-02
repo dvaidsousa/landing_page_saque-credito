@@ -59,6 +59,7 @@ export default {
   max-width: 1500px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .grid {
@@ -79,6 +80,7 @@ export default {
   text-align: center;
   color: #000;
   max-width: 600px;
+  padding: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -109,6 +111,16 @@ h4 {
   color: #000;
 }
 
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
@@ -116,6 +128,16 @@ h4 {
 
   h4 {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
   }
 }
 
@@ -145,6 +167,21 @@ h4 {
   transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+  .cta-button {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
 .hero-image {
   width: 100%;
   max-width: 900px;
@@ -152,9 +189,21 @@ h4 {
   transition: transform 0.3s;
 }
 
+@media (max-width: 1024px) {
+  .hero-image {
+    max-width: 700px;
+  }
+}
+
 @media (max-width: 768px) {
-  .cta-button {
-    width: 100%;
+  .hero-image {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    max-width: 100%;
   }
 }
 
