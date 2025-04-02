@@ -56,7 +56,7 @@ export default {
 
 @media (min-width: 768px) {
   .hero-section {
-    padding: 6rem 1rem;
+    padding: 12rem 1rem;
   }
 }
 
