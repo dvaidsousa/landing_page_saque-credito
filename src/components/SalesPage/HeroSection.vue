@@ -10,7 +10,7 @@
         <img class="highlight-gif" src="../../assets/img/gif.gif" alt="Destaque" />
       </div>
       <h2>SAQUE ATÉ 70% DO LIMITE DE CRÉDITO</h2>
-      <button class="cta-button">SOLICITE AGORA</button>
+      <a href="https://saquecredito.com.br/"><button class="cta-button">SOLICITE AGORA</button></a>
     </div>
   </div>
 </template>
@@ -265,6 +265,9 @@ h2 {
   .highlight-gif {
     max-width: 300px;
   }
+}
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
 </style>
