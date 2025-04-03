@@ -1,207 +1,270 @@
+
 <template>
-  <section class="hero-section">
-    <div class="container">
-      <div class="grid">
-        <!-- Texto e Call to Action -->
-        <div class="text-content">
-          <p class="tagline fade" ref="tagline">Conte com a Saque Crédito</p>
-          <h1 class="fade" ref="title">Seu Crédito de Forma Rápida e Segura!</h1>
-          <h4 class="fade" ref="subtitle">
-            Oferecemos as melhores condições para você acessar seu crédito sem burocracia. Realize seus planos com segurança e confiança!
-          </h4>
-
-          <!-- Avaliações -->
-          <div class="review">
-            <span class="reviews-count">(+ de 10.000 clientes satisfeitos)</span>
-          </div>
-
-          <!-- Botão de Call to Action -->
-          <a href="https://api.whatsapp.com/send/?phone=+552799242-5656&text=Olá,%20gostaria%20de%20simular%20meu%20crédito%20consignado!" target="_blank">
-            <button class="cta-button">FALE CONOSCO</button>
-          </a>
-        </div>
-
-        <!-- Imagem -->
-        <div class="image-wrapper">
-          <img class="hero-image fade" ref="heroImage" src="../../assets/img/mulher.png" alt="Imagem do Hero Section" />
-        </div>
+  <div class="hero-section">
+    <div class="content">
+      <div class="logo-container">
+        <img class="logo" src="../../assets/img/logo-saquecredito-sf.png" alt="Logo" />
       </div>
+      <h2>AS MELHORES VANTAGENS PARA VOCÊ!</h2>
+      <div class="gif-container">
+        <img class="highlight-gif" src="../../assets/img/gif.gif" alt="Destaque" />
+      </div>
+      <h2>SAQUE ATÉ 70% DO LIMITE DE CRÉDITO</h2>
+      <button class="cta-button">SOLICITE AGORA</button>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "HeroSection",
-  mounted() {
-    setTimeout(() => {
-      this.$refs.tagline.classList.add("visible");
-      this.$refs.title.classList.add("visible");
-      this.$refs.subtitle.classList.add("visible");
-      this.$refs.heroImage.classList.add("visible");
-    }, 200);
-  }
+  name: "PromoCard",
 };
 </script>
 
 <style scoped>
 .hero-section {
-  background-color: #d1d1d1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-@media (min-width: 768px) {
-  .hero-section {
-    padding: 12rem 1rem;
-  }
-}
-
-.container {
-  max-width: 1500px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-.grid {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  gap: 2rem;
-}
-
-@media (min-width: 768px) {
-  .grid {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.text-content {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #0e8a4a, #05a552, #2fb869, #02bb5b, #00cc66);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
   text-align: center;
-  color: #000;
-  max-width: 600px;
-  padding: 0.5rem;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
 }
 
-@media (min-width: 768px) {
-  .text-content {
-    text-align: left;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.tagline {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #00a508;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #000;
-}
-
-h4 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000;
-}
-
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 2.5rem;
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
-  h4 {
-    font-size: 1.2rem;
+  25% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2.2rem;
+.content {
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  width: 500px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInContent 1.5s ease-in-out forwards 0.5s;
+}
+
+@keyframes fadeInContent {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  h4 {
-    font-size: 1.1rem;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.8rem;
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  animation: bounceIn 1.2s ease-in-out;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
   }
-  h4 {
-    font-size: 1rem;
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
-.review {
-  margin-bottom: 1.5rem;
+.logo {
+  width: 180px;
 }
 
-.reviews-count {
-  font-size: 1rem;
-  font-weight: 500;
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInText 1.5s ease-in-out forwards 1s;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gif-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.highlight-gif {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fadeInGif 1.5s ease-in-out forwards 1.2s;
+}
+
+@keyframes fadeInGif {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .cta-button {
-  background-color: #007506;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1rem;
-  padding: 12px 20px;
-  border-radius: 8px;
+  background: #05a552;
+  color: white;
   border: none;
+  padding: 18px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  width: 100%;
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+  opacity: 0;
+  animation: fadeInButton 1.5s ease-in-out forwards 1.5s, pulse 2s infinite ease-in-out 2s;
+}
+
+@keyframes fadeInButton {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .cta-button:hover {
-  background-color: #000;
+  background: #afafaf;
+  color: black;
   transform: scale(1.05);
 }
 
-@media (max-width: 480px) {
-  .cta-button {
-    font-size: 0.9rem;
-    padding: 10px 18px;
+@media (max-width: 600px) {
+  .content {
+    padding: 30px;
   }
-}
-
-.hero-image {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 10px;
-  transition: transform 0.3s;
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  .cta-button {
+    font-size: 18px;
+    padding: 15px 25px;
+  }
 }
 
 @media (max-width: 768px) {
-  .hero-image {
-    max-width: 450px;
+  .content {
+    padding: 40px 20px;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .cta-button {
+    font-size: 20px;
+    padding: 18px 30px;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .highlight-gif {
+    max-width: 350px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-image {
+  .content {
+    padding: 30px 15px;
     max-width: 100%;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .cta-button {
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .highlight-gif {
+    max-width: 300px;
   }
 }
 
-.fade {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.fade.visible {
-  opacity: 1;
-}
 </style>
