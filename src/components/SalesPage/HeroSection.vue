@@ -4,7 +4,11 @@
       <div class="logo-container">
         <img class="logo" src="../../assets/img/logo-saquecredito-sf.png" alt="Logo" />
       </div>
-      <h2>Libere !</h2>
+      <h2>
+        <span style="color: green;">Saque-aniversário:<br></span>
+        A liberdade de usar seu FGTS como quiser!
+        Liberamos seu FGTS sem complicação</h2>
+      <h4>liberamos seu FGTS sem complicação</h4>
       <div class="gif-container">
         <img class="highlight-gif" src="../../assets/img/gif.gif" alt="Destaque" />
       </div>
@@ -34,6 +38,40 @@ export default {
   animation: fadeIn 1.5s ease-in-out forwards;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 50% 100%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  75% {
+    background-position: 50% 0%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .content {
   background: white;
   padding: 50px;
@@ -51,6 +89,7 @@ export default {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -69,10 +108,12 @@ export default {
     transform: scale(0.8);
     opacity: 0;
   }
+
   50% {
     transform: scale(1.1);
     opacity: 1;
   }
+
   100% {
     transform: scale(1);
   }
@@ -83,7 +124,7 @@ export default {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
@@ -97,6 +138,7 @@ h2 {
     opacity: 0;
     transform: translateY(10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -123,6 +165,7 @@ h2 {
     opacity: 0;
     transform: scale(0.9);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -149,6 +192,7 @@ h2 {
     opacity: 0;
     transform: scale(0.9);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -159,9 +203,11 @@ h2 {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.05);
   }
+
   100% {
     transform: scale(1);
   }
@@ -177,11 +223,11 @@ h2 {
   .content {
     padding: 30px;
   }
-  
+
   h2 {
     font-size: 24px;
   }
-  
+
   .cta-button {
     font-size: 18px;
     padding: 15px 25px;
@@ -235,8 +281,8 @@ h2 {
     max-width: 300px;
   }
 }
+
 * {
   font-family: 'Poppins', sans-serif;
 }
-
 </style>
