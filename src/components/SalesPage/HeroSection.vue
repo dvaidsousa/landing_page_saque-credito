@@ -13,7 +13,7 @@
       <div class="gif-container">
         <img class="img" src="../../assets/img/muie.png" alt="Logo" />
       </div>
-      <h2>Clique no botão para sacar agora mesmo!</h2>
+      <h3>Clique no botão para sacar agora mesmo!</h3>
       <a href="https://saquecredito.com.br/"><button class="cta-button">SOLICITE SAQUE</button></a>
     </div>
   </div>
@@ -39,6 +39,8 @@ export default {
 }
 
 .img{
+  width: 90%;
+  margin-top: -15px;
   margin-bottom: -34px;
 }
 
@@ -78,7 +80,6 @@ export default {
 
 .content {
   background: white;
-  padding: 40px;
   border-radius: 20px;
   max-width: 90%;
   width: 500px;
@@ -127,7 +128,7 @@ export default {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
