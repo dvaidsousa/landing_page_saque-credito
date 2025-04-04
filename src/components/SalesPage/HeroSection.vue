@@ -1,9 +1,10 @@
 <template>
   <div class="hero-section">
     <div class="content">
-      <div class="logo-container">
+      <div class="logo-container" >
         <img class="logo" src="../../assets/img/logo-saquecredito-sf.png" alt="Logo" />
       </div>
+
       <h2>
         <span style="color: #2fb869;">Saque-aniversário:<br></span>
         A liberdade de usar seu FGTS como quiser!
@@ -29,7 +30,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 85vh;
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
   text-align: center;
@@ -74,9 +75,8 @@ export default {
 
 .content {
   background: white;
-  padding: 50px;
+  padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   max-width: 90%;
   width: 500px;
   opacity: 0;
