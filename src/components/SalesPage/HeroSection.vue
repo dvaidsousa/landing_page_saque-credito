@@ -5,15 +5,15 @@
         <img class="logo" src="../../assets/img/logo-saquecredito-sf.png" alt="Logo" />
       </div>
       <h2>
-        <span style="color: green;">Saque-aniversário:<br></span>
+        <span style="color: #2fb869;">Saque-aniversário:<br></span>
         A liberdade de usar seu FGTS como quiser!
-        Liberamos seu FGTS sem complicação</h2>
-      <h4>liberamos seu FGTS sem complicação</h4>
+      </h2>
+      <h3>Liberamos seu FGTS sem complicação</h3>
       <div class="gif-container">
-        <img class="highlight-gif" src="../../assets/img/gif.gif" alt="Destaque" />
+        <img class="img" src="../../assets/img/muie.png" alt="Logo" />
       </div>
-      <h2>SAQUE ATÉ 70% DO LIMITE DE CRÉDITO</h2>
-      <a href="https://saquecredito.com.br/"><button class="cta-button">SOLICITE AGORA</button></a>
+      <h2>Clique no botão para sacar agora mesmo!</h2>
+      <a href="https://saquecredito.com.br/"><button class="cta-button">SOLICITE SAQUE</button></a>
     </div>
   </div>
 </template>
@@ -125,6 +125,16 @@ export default {
 
 h2 {
   font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInText 1.5s ease-in-out forwards 1s;
+}
+
+h3 {
+  font-size: 19px;
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
