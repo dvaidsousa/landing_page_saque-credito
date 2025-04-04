@@ -34,7 +34,6 @@ export default {
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
   text-align: center;
-  padding: 20px;
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
 }
