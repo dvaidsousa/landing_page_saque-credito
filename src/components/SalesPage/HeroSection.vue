@@ -1,11 +1,10 @@
-
 <template>
   <div class="hero-section">
     <div class="content">
       <div class="logo-container">
         <img class="logo" src="../../assets/img/logo-saquecredito-sf.png" alt="Logo" />
       </div>
-      <h2>AS MELHORES VANTAGENS PARA VOCÊ!</h2>
+      <h2>Libere !</h2>
       <div class="gif-container">
         <img class="highlight-gif" src="../../assets/img/gif.gif" alt="Destaque" />
       </div>
@@ -27,42 +26,12 @@ export default {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(-45deg, #0e8a4a, #05a552, #2fb869, #02bb5b, #00cc66);
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
   text-align: center;
   padding: 20px;
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  25% {
-    background-position: 50% 100%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  75% {
-    background-position: 50% 0%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .content {
