@@ -39,6 +39,10 @@ export default {
   animation: fadeIn 1.5s ease-in-out forwards;
 }
 
+.img{
+  margin-bottom: -34px;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
