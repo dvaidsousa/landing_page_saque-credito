@@ -28,6 +28,7 @@ export default {
 <style scoped>
 .hero-section {
   display: flex;
+  padding: 40px;
   justify-content: center;
   align-items: center;
   min-height: 85vh;
@@ -39,7 +40,7 @@ export default {
 }
 
 .img{
-  width: 90%;
+  width: 70%;
   margin-top: -15px;
   margin-bottom: -34px;
 }
@@ -234,6 +235,9 @@ h3 {
 }
 
 @media (max-width: 600px) {
+  .hero-section {
+    padding: 0;
+  }
   .content {
     padding: 30px;
   }
@@ -246,9 +250,16 @@ h3 {
     font-size: 18px;
     padding: 15px 25px;
   }
+
+  .img{
+    width: 85%;
+  }
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 0;
+  }
   .content {
     padding: 40px 20px;
     width: 90%;
@@ -270,9 +281,16 @@ h3 {
   .highlight-gif {
     max-width: 350px;
   }
+
+  .img{
+    width: 85%;
+  }
 }
 
 @media (max-width: 480px) {
+  .hero-section {
+    padding: 0;
+  }
   .content {
     padding: 30px 15px;
     max-width: 100%;
@@ -293,6 +311,10 @@ h3 {
 
   .highlight-gif {
     max-width: 300px;
+  }
+
+  .img{
+    width: 85%;
   }
 }
 
